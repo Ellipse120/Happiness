@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4167CE1F1BDE119400D669BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4167CE1E1BDE119400D669BE /* AppDelegate.swift */; };
-		4167CE211BDE119400D669BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4167CE201BDE119400D669BE /* ViewController.swift */; };
 		4167CE241BDE119400D669BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4167CE221BDE119400D669BE /* Main.storyboard */; };
 		4167CE261BDE119400D669BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4167CE251BDE119400D669BE /* Assets.xcassets */; };
 		4167CE291BDE119400D669BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4167CE271BDE119400D669BE /* LaunchScreen.storyboard */; };
 		4167CE341BDE119400D669BE /* HappinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4167CE331BDE119400D669BE /* HappinessTests.swift */; };
 		4167CE3F1BDE119400D669BE /* HappinessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4167CE3E1BDE119400D669BE /* HappinessUITests.swift */; };
+		41FCDC871BDE13D600D7F1C9 /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FCDC861BDE13D600D7F1C9 /* HappinessViewController.swift */; };
+		41FCDC891BDE164200D7F1C9 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FCDC881BDE164200D7F1C9 /* FaceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		4167CE1B1BDE119400D669BE /* Happiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4167CE1E1BDE119400D669BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4167CE201BDE119400D669BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4167CE231BDE119400D669BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4167CE251BDE119400D669BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4167CE281BDE119400D669BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		4167CE3A1BDE119400D669BE /* HappinessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappinessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4167CE3E1BDE119400D669BE /* HappinessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessUITests.swift; sourceTree = "<group>"; };
 		4167CE401BDE119400D669BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41FCDC861BDE13D600D7F1C9 /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
+		41FCDC881BDE164200D7F1C9 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				4167CE1E1BDE119400D669BE /* AppDelegate.swift */,
-				4167CE201BDE119400D669BE /* ViewController.swift */,
 				4167CE221BDE119400D669BE /* Main.storyboard */,
+				41FCDC881BDE164200D7F1C9 /* FaceView.swift */,
+				41FCDC861BDE13D600D7F1C9 /* HappinessViewController.swift */,
 				4167CE251BDE119400D669BE /* Assets.xcassets */,
 				4167CE271BDE119400D669BE /* LaunchScreen.storyboard */,
 				4167CE2A1BDE119400D669BE /* Info.plist */,
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4167CE211BDE119400D669BE /* ViewController.swift in Sources */,
+				41FCDC871BDE13D600D7F1C9 /* HappinessViewController.swift in Sources */,
 				4167CE1F1BDE119400D669BE /* AppDelegate.swift in Sources */,
+				41FCDC891BDE164200D7F1C9 /* FaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +486,7 @@
 				4167CE451BDE119400D669BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4167CE461BDE119400D669BE /* Build configuration list for PBXNativeTarget "HappinessTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				4167CE481BDE119400D669BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4167CE491BDE119400D669BE /* Build configuration list for PBXNativeTarget "HappinessUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				4167CE4B1BDE119400D669BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
